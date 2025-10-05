@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="/css/custom.css">
+
+<nav class="main-nav">
+  <ul>
+    <li><a href="/" class="{{ if .IsHome }}active{{ end }}">home</a></li>
+    <li><a href="/about/" class="{{ if eq .Section "about" }}active{{ end }}">about</a></li>
+    <li><a href="/post/" class="{{ if eq .Section "posts" }}active{{ end }}">posts</a></li>
+    <li><a href="/tags/" class="{{ if eq .Section "tags" }}active{{ end }}">tags</a></li>
+  </ul>
+</nav>

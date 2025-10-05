@@ -10,11 +10,10 @@
   </head>
 
   <body>
-    <nav>
-    <ul class="menu">
-      {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-      {{ end }}
-    </ul>
-    <hr/>
-    </nav>
+    <div class="hero-section">
+      <iframe src="/lorenz.html" frameborder="0"></iframe>
+      <a href="/">
+      <h1>phasewalk</h1>
+        </a>
+      <p class="tagline">information · security · systems</p>
+    </div>
